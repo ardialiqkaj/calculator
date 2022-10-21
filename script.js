@@ -1,30 +1,31 @@
 let firstNum;
 let secondNum;
 let operand;
+let result;
 
-/*function add(...numbers) {
-  let result = numbers.reduce((num1, num2) => num1 + num2);
+function add() {
+  result = parseInt(firstNum) + parseInt(secondNum);
   return result;
 }
 //console.log(addition(10, 2, 18));
 
-function subtrac(...numbers) {
-  let result = numbers.reduce((num1, num2) => num1 - num2);
+function subtract() {
+  result = firstNum - secondNum;
   return result;
 }
 //console.log(subtraction(10, 2, 9));
 
-function multiply(...numbers) {
-  let result = numbers.reduce((num1, num2) => num1 * num2);
+function multiply() {
+  result = firstNum * secondNum;
   return result;
 }
 //console.log(multiplication(10, 2));
 
-function divise(...numbers) {
-  let result = numbers.reduce((num1, num2) => num1 / num2);
+function divide() {
+  result = firstNum / secondNum;
   return result;
 }
-//console.log(division(10, 2));*/
+//console.log(division(10, 2));
 
 function operate() {
   firstNum = prompt("Type the first number:");
@@ -32,13 +33,13 @@ function operate() {
   operand = prompt("Type your operand: ");
 
   if (operand === "+") {
-    result = parseInt(firstNum) + parseInt(secondNum);
+    return add();
   } else if (operand === "-") {
-    result = parseInt(firstNum) - parseInt(secondNum);
+    return subtract();
   } else if (operand === "*") {
-    result = parseInt(firstNum) * parseInt(secondNum);
+    return multiply();
   } else if (operand === "/") {
-    result = parseInt(firstNum) / parseInt(secondNum);
+    return divide();
   } else {
     result = "error";
   }
