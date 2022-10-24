@@ -78,11 +78,8 @@ function backspace(number) {
 }
 
 function appendNumber(number) {
-  if (
-    (number === "." && newNumber.innerText.includes(".")) ||
-    (number === "0" && newNumber.innerText.includes("0"))
-  )
-    return;
+  if (number === "." && newNumber.innerText.includes(".")) return;
+  else if (newNumber.innerText === "0" && number != ".") return;
   newNumber.innerText += number;
 }
 
