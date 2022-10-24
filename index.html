@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="parent">
-
-    </div>
+    <main>
+        <section class="screen">
+            <div class="prevNumber"></div>
+            <div class="newNumber"></div>
+        </section>
+        <section>
+            <div class="row">
+                <button id="clear" class="func-button btn-clear flex-grow">C</button>
+                <button id="delete" class="func-button btn-delete">DEL</button>
+                <button id="divide" class="func-button btn-math">&#xf7</button>
+            </div>
+            <div class="row">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button id="multiply" class="func-button btn-math">&#215</button>
+            </div>
+            <div class="row">
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button id="substract" class="func-button btn-math">-</button>
+            </div>
+            <div class="row">
+                <button class="number" accesskey="1">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button id="add" class="func-button btn-math">+</button>
+            </div>
+            <div class="row">
+                <button id="zero" class="number flex-grow">0</button>
+                <button id="decimal" class="number">.</button>
+                <button id="equals" class="func-button btn-equals">=</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,79 @@
+body {
+    overflow-x: hidden;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(145, 186, 196);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.screen {
+    height: 80px;
+    background-color: rgb(146, 146, 146);
+    color: rgb(0, 31, 70);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: rgb(61, 62, 63) 3px 3px 6px 0px inset, rgba(52, 52, 52, 0.5) -3px -3px 6px 1px inset;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+#clear {
+    flex: 2;
+}
+
+#zero {
+    flex: 2;
+}
+
+button {
+    background-color: #abb1c8;
+    color: rgb(9, 12, 46);
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 31px;
+    height: 80px;
+    width: 80px;
+    min-height: 13px;
+    min-width: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.number:active {
+    background-color: rgb(133, 133, 133);
+}
+
+.btn-clear:active,
+.btn-delete:active,
+.btn-equals:active,
+.btn-math:active {
+    background-color: rgb(50, 176, 162);
+}
+
+section .func-button {
+    background-color: rgb(122, 189, 163);
+}
